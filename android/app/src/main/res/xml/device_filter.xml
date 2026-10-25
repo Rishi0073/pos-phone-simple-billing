@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Auto-launch hint for common 80 mm POS USB thermal printers.
+         Runtime detection in UsbPrinterPlugin.kt is VID/PID agnostic and
+         offers ANY device with a printable bulk OUT endpoint. -->
+    <!-- Winbond (widely used in POS80 thermal printer boards) -->
+    <usb-device vendor-id="1046" />
+    <!-- Xprinter / many POS80 clones -->
+    <usb-device vendor-id="26729" />
+    <!-- NXP / various thermal printer controllers -->
+    <usb-device vendor-id="8137" />
+    <!-- Trust / generic printer class devices -->
+    <usb-device vendor-id="4070" />
+    <!-- Various POS58/POS80 boards -->
+    <usb-device vendor-id="10184" />
+    <usb-device vendor-id="11368" />
+    <!-- CH340 / CH341 (serial bridge inside many H80i/POS80 printers) -->
+    <usb-device vendor-id="6790" product-id="7523" />
+    <usb-device vendor-id="6790" />
+    <!-- CP210x UART Bridge -->
+    <usb-device vendor-id="4292" product-id="60000" />
+    <!-- Prolific PL2303 -->
+    <usb-device vendor-id="1659" product-id="8963" />
+    <!-- FTDI FT232R / FT231X -->
+    <usb-device vendor-id="1027" product-id="24577" />
+    <usb-device vendor-id="1027" product-id="24597" />
+</resources>
